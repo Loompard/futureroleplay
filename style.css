@@ -18,6 +18,42 @@ div {
   height: 100%;
 }
 
+nav {
+  text-decoration: none;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  align-self: center;
+  transform: translateY(-1040px);
+  background: #DDDDDD;
+  padding-bottom: 7px;
+  transition: 0.5s;
+}
+
+nav:hover {
+  transform: translateY(-1001px);
+  padding-bottom: 0px;
+  transition: 0.5s;
+}
+
+nav a {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: white;
+  /*background: white;*/
+  background: radial-gradient(#476BC8, #769AED);
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px black;
+}
+
 .block {
 
   overflow: hidden;
@@ -25,7 +61,7 @@ div {
   display: inline-block;
 }
 
-h1 {
+.block h1 {
   font-style: italic;
   font-size: 72px;
   color: white;
@@ -34,6 +70,15 @@ h1 {
   top: 50%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0px 0px 2px black);
+}
+
+.block h1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  background: white;
+  text-shadow: -1px 1px 3px black;
+  padding: 5px;
 }
 
 .bubbles {
@@ -152,7 +197,7 @@ h1 {
 }
 
 .content-block {
-  background: #CEE2E2;
+  background: #D7EBEB;
   padding: 10px;
   border-radius: 15px;
   width: 40%;
@@ -170,4 +215,19 @@ h1 {
     opacity: 0;
     border-radius: 50%;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1a21;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDDDDD;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFFFFF;
+  border-radius: 0px;
 }
